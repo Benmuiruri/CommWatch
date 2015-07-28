@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55FF99"
+    android:padding="10dp"
+    tools:ignore="SpUsage,Deprecated,TextFields,HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="293dp"
+        android:layout_gravity="center_vertical|center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- View Title Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:layout_weight="0.11"
+            android:text="Community Watch"
+            android:textColor="#064401"
+            android:textSize="25dip"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible" />
+
+        <!-- Email Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <!-- Email TextField -->
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Password Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Password"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <!-- Password TextField -->
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true" />
+
+        <!-- Error message -->
+
+        <TextView
+            android:id="@+id/login_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#e30000"
+            android:textStyle="bold" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dip"
+            android:layout_weight="0.39"
+            android:background="#cef6e8"
+            android:text="Login"
+            android:textColor="#064401"
+            android:textColorLink="#064401"
+            android:textSize="30sp"
+            tools:ignore="InefficientWeight" />
+
+        <!-- Link to Registration Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="I don&apos;t have account? SignUp now!"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

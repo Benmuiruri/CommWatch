@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- string ids for registration.xml -->
+    <string name="app_name">Community Watch</string>
+    <string name="username_textview">Username:</string>
+    <string name="password_textview">Password:</string>
+    <string name="submit">Submit</string>
+    
+    <!-- string ids for home.xml -->
+    <string name="post_comment">Write Something</string>
+    <string name="post_issue">Write Issue</string>
+    <string name="read_comments_title">Search Topic...</string>
+      <string name="passwords_not_same">Passwords don\'t match</string>
+        <string name="alt_profile_img">Profile Image</string>
+        
+        
+        
+           <!-- Activity titles -->    
+    <string name="activity_location_found">Location Found</string>
+    
+    <!-- Action Bar action items -->
+    <string name="action_search">Sarch</string>
+    <string name="action_location_found">Location Found</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_contacts">Contacts</string>
+    <string name="action_help">Help</string>
+    <string name="action_check_updates">Check for Updates</string>
+    
+    <!-- Search  -->
+    <string name="search_hint">Search color..</string>
+      
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload</string>
+    <string name="button">Logout</string>
+        </resources>

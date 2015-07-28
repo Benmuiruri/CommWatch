@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2b2b2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,UselessParent,TextFields,Overdraw,ObsoleteLayoutParam,ContentDescription" >
+
+    <TextView
+        android:id="@+id/textTransDate"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text="sysdate"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:onClick="showDateDialog"
+        android:src="@drawable/datepicker"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/tweet_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/user_profile"
+        android:contentDescription="@string/alt_profile_img" />
+
+    <TextView
+        android:id="@+id/postid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#064401"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.67"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                tools:ignore="InefficientWeight" >
+
+                <TextView
+                    android:id="@+id/txtCateg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Category"
+                    android:textColor="#064401"
+                    android:textSize="20sp"
+                    android:typeface="serif" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.67"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                tools:ignore="InefficientWeight" >
+
+                <CheckBox
+                    android:id="@+id/btnCustomCheckBoxLike"
+                    android:layout_width="70dp"
+                    android:layout_height="32dp"
+                    android:button="@drawable/like_button_state" />
+
+                <Button
+                    android:id="@+id/unlike"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/unlike"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/like"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/like"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="likes"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="#064401"
+                    android:textSize="24sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtLiketotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" likes"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" likes"
+                    android:textColor="#064401"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtunLiketotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    likes"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" unlikes"
+                    android:textColor="#064401"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tweet_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Header Stuff Body text goes round and round and round"
+                android:textColor="#181717"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tweet_body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:text="Body text goes round and round and round Body text
+	             goes round and round and round Body text goes round and round and round zzzzz xxxx"
+                android:textColor="#393939"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tweet_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:textColor="#615f5f"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b2b2b2"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="#55FF99"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/rlBottom"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dp"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/message_comment"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="comment topic here..."
+                android:visibility="gone" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/message_comment"
+                android:background="#064401"
+                android:text="Comment"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

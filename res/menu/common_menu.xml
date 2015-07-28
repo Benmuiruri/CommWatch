@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	
+	
+	<item android:id="@+id/txtCatego"
+		android:title="Update Profile"/>
+	<item android:id="@+id/txtlogout"
+		android:title="LogOut"/>
+	
+</menu>

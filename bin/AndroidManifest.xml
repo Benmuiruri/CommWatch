@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.community.watch"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.communitywatch.LoginActivity"
+            android:label="@string/app_name" >
+             <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+             <!-- Search results activity -->
+        <activity android:name="com.communitywatch.SearchResultsActivity"
+            android:parentActivityName="com.communitywatch.TabLayoutActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+          <!-- Register MyService -->
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
+		<!--  Register BroadCase Receiver -->
+        <receiver
+            android:name=".SampleBC"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+          <activity
+            android:name="com.communitywatch.LocationFound"
+            android:label="@string/activity_location_found"
+            android:parentActivityName="com.communitywatch.TabLayoutActivity" >
+            <!-- To support split actionbar below API Level 14 -->
+            <meta-data android:name="android.support.UI_OPTIONS"
+                   android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.communitywatch.RegisterActivity"
+            android:label="@string/app_name"  >
+        </activity>
+               
+          <activity
+            android:name="com.communitywatch.LoginOffsesion"
+            android:label="@string/app_name"  >
+        </activity>
+        <activity
+            android:name="com.communitywatch.TabLayoutActivity"
+            android:label="@string/app_name"  >
+        </activity>
+          <activity
+            android:name="com.communitywatch.SuggestionCategoryActivity"
+            android:label="@string/app_name" >
+             </activity>
+               <activity
+            android:name="com.communitywatch.CategoryIssueActivity"
+            android:label="@string/app_name" >
+             </activity>
+                  <activity
+            android:name="com.communitywatch.AddCategoryActivity"
+            android:label="@string/app_name" >
+             </activity>
+        <activity
+            android:name="com.communitywatch.AddSuggestion"
+            android:label="@string/app_name"  >
+        </activity>
+         <activity
+            android:name="com.communitywatch.AddIssue"
+            android:label="@string/app_name"  >
+        </activity>
+         <activity
+            android:name="com.communitywatch.ReadSuggestions"
+            android:label="@string/app_name"  >
+            
+        </activity>
+        
+        <activity
+            android:name="com.communitywatch.ReadIssues"
+            android:label="@string/app_name"  >
+            
+        </activity>
+          <activity
+            android:name="com.communitywatch.ViewImageActivity"
+            android:label="@string/app_name"  >
+            
+        </activity>
+             <activity
+            android:name="com.communitywatch.TweetIssueActivity"
+            android:label="@string/app_name"  >
+        </activity>
+              <activity
+            android:name="com.communitywatch.TweetSuggActivity"
+            android:label="@string/app_name"  >
+        </activity>
+              <activity
+            android:name="com.communitywatch.ResolvedTweet"
+            android:label="@string/app_name"  >
+        </activity>
+         <activity
+            android:name="com.communitywatch.Upload"
+            android:label="@string/app_name"  >
+        </activity>
+             <activity
+            android:name="com.communitywatch.UpdateActivity"
+            android:label="@string/app_name"  >
+        </activity>
+                 <activity
+            android:name="com.communitywatch.ResolvedHome"
+            android:label="@string/app_name"  >
+        </activity>
+                 <activity
+            android:name="com.communitywatch.ResolvedIssueActivity"
+            android:label="@string/app_name"  >
+        </activity>
+                  <activity
+            android:name="com.communitywatch.ResolvedSuggestionActivity"
+            android:label="@string/app_name"  >
+        </activity>
+           <activity
+            android:name="com.communitywatch.UploadActivity"
+            android:screenOrientation="portrait" 
+             android:label="@string/app_name">
+        </activity>
+          <activity
+            android:name="com.communitywatch.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

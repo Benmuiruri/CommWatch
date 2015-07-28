@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="#55FF99"
+    tools:ignore="TextFields,ScrollViewSize,HardcodedText,SpUsage,Deprecated" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_gravity="center_vertical|center"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <!-- View Title Label -->
+
+        <!-- Name Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dip"
+            android:layout_weight="0.11"
+            android:text="Community Watch"
+            android:textColor="#064401"
+            android:textSize="25dip"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#fff"
+            android:visibility="gone" />
+
+        <!-- Name TextField -->
+
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="comwatch@yahoo.com"
+            android:visibility="gone" />
+
+        <!-- Email Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#fff" />
+
+        <!-- Email TextField -->
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Password Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Password"
+            android:textColor="#fff" />
+
+        <!-- Password TextField -->
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter password"
+            android:password="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="confirm password"
+            android:password="true" />
+
+        <!-- Error message -->
+
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/register_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#e30000"
+            android:textStyle="bold" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dip"
+            android:background="#cef6e8"
+            android:text="Update"
+            android:textColor="#878f8c" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Cancel"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
